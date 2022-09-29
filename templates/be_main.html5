@@ -1,3 +1,5 @@
+<?php
+
 $this->extend('be_main'); ?>
 
 <?php $this->block('head'); ?>
