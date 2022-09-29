@@ -1,0 +1,34 @@
+$this->extend('be_main'); ?>
+
+<?php $this->block('head'); ?>
+  <?php $this->parent(); ?>
+  <style>
+    /* u'R style here */
+    .w25, .w33, .w66, .w75 {
+        float: left;
+        height: 80px;
+    }
+    .w25 {
+        width: calc(25% - 30px);
+    }
+    .w33 {
+        width: calc(33.3333% - 30px);
+    }
+    .w66 {
+        width: calc(66.6666% - 30px);
+    }
+    .w75 {
+        width: calc(75% - 30px);
+    }
+    .heightAuto {
+        height: auto;
+    }
+
+    @media (max-width: 767px) {
+        .w25, .w33, .w66, .w75 {
+            float: none;
+            width: calc(100% - 30px);
+        }
+    }
+  </style>
+<?php $this->endblock(); ?>
